@@ -1,1 +1,1 @@
-http://localhost:1313/posts/test/
+https://ytian02.github.io/posts/test/
