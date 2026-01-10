@@ -2,10 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Collections on Kanat Space</title>
-    <link>https://ytian02.github.io/collections/</link>
+    <link>http://localhost:1313/collections/</link>
     <description>Recent content in Collections on Kanat Space</description>
     <generator>Hugo</generator>
     <language>zh-CN</language>
-    <atom:link href="https://ytian02.github.io/collections/index.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>ytian02@outlook.com (ty)</managingEditor>
+    <webMaster>ytian02@outlook.com (ty)</webMaster>
+    <lastBuildDate>Sat, 10 Jan 2026 17:09:18 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/collections/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reinforcement Learning</title>
+      <link>http://localhost:1313/collections/reinforcement-learning/</link>
+      <pubDate>Sat, 10 Jan 2026 17:09:18 +0800</pubDate><author>ytian02@outlook.com (ty)</author>
+      <guid>http://localhost:1313/collections/reinforcement-learning/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

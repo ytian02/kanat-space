@@ -23,6 +23,9 @@ categories:
 collections:
 -
 
+# [重要] 开启本页面的数学公式支持
+math: true
+
 # 是否在侧边栏开启合集
 collectionList: true
 # 是否在帖子末尾启用合集

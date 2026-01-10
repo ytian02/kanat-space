@@ -117,10 +117,10 @@ enableEmoji = true
 
   # 作者配置
   [params.author]
-    name = ""
-    email = ""
-    link = ""
-    avatar = ""
+    name = "ty"
+    email = "ytian02@outlook.com"
+    link = "https://github.com/ytian02"
+    avatar = "/avatar.png"
 
   # 应用图标配置
   [params.app]
@@ -183,7 +183,7 @@ enableEmoji = true
       # LOGO 的 URL
       logo = "/logo.png"
       # 标题名称
-      name = "Kanat Space"  # 暂时不知道有啥用
+      name = "Kanat Space"
       # 你可以在名称（允许 HTML 格式）之前添加其他信息，例如图标
       pre = ""
       # 你可以在名称（允许 HTML 格式）之后添加其他信息，例如图标
@@ -282,11 +282,11 @@ enableEmoji = true
       # Gravatar 邮箱，用于优先在主页显示的头像
       gravatarEmail = ""
       # 主页显示头像的 URL
-      avatarURL = "/avatar.jpg"
+      avatarURL = "/avatar.png"
       #  头像菜单链接的 identifier
       avatarMenu = ""
       #  主页显示的网站标题（支持 HTML 格式）
-      title = "Welcome to my world~"
+      title = "Kanat Space"
       # 主页显示的网站副标题
       subtitle = "Everyone is mania in general"
       # 是否为副标题显示打字机动画
@@ -923,6 +923,12 @@ enableEmoji = true
       table = true
       taskList = true
       typographer = true
+      # 启用 Math 扩展支持
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['$$', '$$'], ['\\[', '\\]']]
+          inline = [['$', '$'], ['\\(', '\\)']]
     [markup.goldmark.renderer]
       # 是否在文档中直接使用 HTML 标签
       unsafe = true

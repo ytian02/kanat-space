@@ -2,10 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Kanat Space</title>
-    <link>https://ytian02.github.io/categories/</link>
+    <link>http://localhost:1313/categories/</link>
     <description>Recent content in Categories on Kanat Space</description>
     <generator>Hugo</generator>
     <language>zh-CN</language>
-    <atom:link href="https://ytian02.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>ytian02@outlook.com (ty)</managingEditor>
+    <webMaster>ytian02@outlook.com (ty)</webMaster>
+    <lastBuildDate>Sat, 10 Jan 2026 17:09:18 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>理论基础</title>
+      <link>http://localhost:1313/categories/%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80/</link>
+      <pubDate>Sat, 10 Jan 2026 17:09:18 +0800</pubDate><author>ytian02@outlook.com (ty)</author>
+      <guid>http://localhost:1313/categories/%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reinforcement</title>
+      <link>http://localhost:1313/categories/reinforcement/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>ytian02@outlook.com (ty)</author>
+      <guid>http://localhost:1313/categories/reinforcement/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

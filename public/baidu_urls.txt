@@ -1,1 +1,1 @@
-https://ytian02.github.io/posts/test/
+http://localhost:1313/posts/bellman-equation/
