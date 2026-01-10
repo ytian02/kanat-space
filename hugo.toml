@@ -205,7 +205,7 @@ enableEmoji = true
 
   # 页面底部信息配置
   [params.footer]
-    enable = true
+    enable = false
     #  自定义内容（支持 HTML 格式）
     # 进阶使用，见参数 `params.customFilePath.footer`
     custom = ""
