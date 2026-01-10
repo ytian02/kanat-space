@@ -1,37 +1,39 @@
-name: deploy  
+name: deploy
 
 on:
-    push:
-    pull_request:
-    workflow_dispatch:
-    schedule:
-        # Runs everyday at 0:00 AM
-        - cron: "0 0 * * *"
+  push:
+    branches: [ main ]  # 明确指定触发分支，避免不必要的构建
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    # Runs everyday at 0:00 AM
+    - cron: "0 0 * * *"
 
 jobs:
-    build:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Checkout
-              uses: actions/checkout@v2
-              with:
-                  submodules: true
-                  fetch-depth: 0
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4 # 升级到 v4
+        with:
+          submodules: true
+          fetch-depth: 0
 
-            - name: Setup Hugo
-              uses: peaceiris/actions-hugo@v2
-              with:
-                  hugo-version: "latest"
-                  extended: true  
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3 # 升级到 v3
+        with:
+          hugo-version: "latest"
+          extended: true
 
-            - name: Build Web
-              run: hugo
+      - name: Build Web
+        run: hugo --minify # 推荐加上 minify 压缩代码
 
-            - name: Deploy Web
-              uses: peaceiris/actions-gh-pages@v3
-              with:
-                  PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
-                  EXTERNAL_REPOSITORY: ytian02/ytian02.github.io
-                  PUBLISH_BRANCH: master
-                  PUBLISH_DIR: ./public
-                  commit_message: ${{ github.event.head_commit.message }}
+      - name: Deploy Web
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          # 注意：这里参数建议用小写，虽然部分版本兼容大写，但小写更标准
+          personal_token: ${{ secrets.PERSONAL_TOKEN }}
+          external_repository: ytian02/ytian02.github.io
+          publish_branch: main  # 确认你的 github.io 仓库默认分支是 main 还是 master，目前新仓库大多是 main
+          publish_dir: ./public
+          commit_message: ${{ github.event.head_commit.message }}
