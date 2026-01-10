@@ -2,7 +2,7 @@ name: deploy
 
 on:
   push:
-    branches: [ main ]  # 明确指定触发分支，避免不必要的构建
+    branches: [ master ]  # 明确指定触发分支，避免不必要的构建
   pull_request:
   workflow_dispatch:
   schedule:
