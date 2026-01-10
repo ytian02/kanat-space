@@ -228,6 +228,7 @@ enableEmoji = true
     #  网站创立时间
     [params.footer.siteTime]
       enable = true
+      hugo = false
       animate = true
       icon = "fa-solid fa-heartbeat"
       pre = ""
