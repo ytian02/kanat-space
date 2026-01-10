@@ -17,7 +17,7 @@ tags:
 
 # 文章所属的类别
 categories:
-- Basic
+- Basic Knowledge
 
 # 文章所属的合集
 collections:
