@@ -1,6 +1,6 @@
 ---
-title: "III Policy Based RL"
-slug: "III Policy Based RL"
+title: "III Policy-Based RL"
+slug: "III Policy-Based RL"
 # 副标题
 subtitle: ""
 # 文章描述，是搜索引擎呈现在搜索结果链接下方的网页简介，建议设置

@@ -46,6 +46,7 @@ featuredImagePreview: ""
 
 ## 基本概念 
 区别于在线(同策略)强化学习和异策略强化学习方法，离线强化学习从离线的经验回放数组中直接学习一个策略用于和环境交互。
+![](/images/online&offpolicy&offlineRL.png)
 ["Offline Reinforcement Learning: Tutorial, Review, and Perspectives on Open Problems" (Levine et al., 2023)](https://arxiv.org/abs/2005.01643)
 
 ## 挑战
@@ -60,10 +61,10 @@ featuredImagePreview: ""
 
 ## 经典方法
 ### BCQ (Batch-Constrained deep Q-learning)
-
 使用条件变分自编码器生成与离线数据集中出现过的动作相似的候选动作，并在一定的范围内进行扰动以确保动作的多样性，通过类似q-learning的方式来学习最优策略。
 
 算法流程: 批量样本抽样；VAE编码 $(s,a)$ 再解码出 $\tilde{a}$；计算重构误差和KL散度以优化VAE的参数；从VAE中抽样得到状态 $s^\prime$ 的 $n$ 个候选动作并加上扰动；计算TD target并更新动作价值网络。
+![](/images/BCQalg.png)
 
 注意BCQ使用的是CVAE (Conditional VAE)，CVAE建模的是条件生成分布，在训练时，编码器以数据和条件作为输入输出近似后验分布的参数，解码器以抽样得到的隐变量和条件作为输入输出重建数据；在推理时，根据抽样得到的隐变量和条件生成新的数据，以数字9为例，条件是9，通过调整隐变量可以生成各种风格的数字9。
 
@@ -76,6 +77,7 @@ $$\hat{Q}^{k+1}\leftarrow\arg\min\limits_{Q}\alpha\cdot\left(\mathbb{E}_{s\sim\m
 $$\min\limits_{Q}\textcolor{red}{\max\limits_\mu}\alpha\cdot\left(\mathbb{E}_{s\sim\mathcal{D},a\sim\textcolor{red}{\mu(a\vert s)}}\left[Q(s,a)\right]-\textcolor{red}{\mathbb{E}_{s\sim\mathcal{D},a\sim\hat{\pi}_\beta(a\vert s)}\left[Q(s,a)\right]}\right)+\dfrac{1}{2}\mathbb{E}_{s,a,s^\prime\sim\mathcal{D}}\left[\left(Q(s,a)-\hat{\mathcal{B}}^\pi\hat{Q}^k(s,a)\right)^2\right]+\textcolor{red}{\mathcal{R}(\mu)}\quad(\text{CQL}(\mathcal{R})).$$
 
 其中$\mathcal{R}(\mu)$是一个正则化器。令$\mathcal{R}(\mu)=-D_\text{KL}(\mu\Vert\rho)$，其中$\rho(a\vert s)$是先验分布，推导出$\mu(a\vert s)\propto\rho(a\vert s)\cdot\exp(Q(s,a))$，当$\rho=\text{Unif}(a)$时，可以推导出如下变体，记为$\text{CQL}(\mathcal{H})$
+$$\min\limits_{Q}\alpha\mathbb{E}_{s\sim\mathcal{D}}\left[\log\sum\limits_{a\in\mathcal{A}}\exp(Q(s,a))-{\mathbb{E}_{a\sim\hat{\pi}_\beta(a\vert s)}\left[Q(s,a)\right]}\right]+\dfrac{1}{2}\mathbb{E}_{s,a,s^\prime\sim\mathcal{D}}\left[\left(Q(s,a)-\hat{\mathcal{B}}^\pi\hat{Q}^k(s,a)\right)^2\right].$$
 
 如果$\rho=\hat{\pi}^{k-1}$，则(4)的第一项被$\hat{\pi}^{k-1}$选中的动作的Q值的指数加权平均替代。注意到(4)式的更新不包括策略，可以直接令$\mu^\ast$为策略；如果使用Actor-Critic的方式，需要借助SAC算法额外训练Actor。一些额外的资料[离线强化学习(Offline RL)系列3: (算法篇) CQL 算法详解与实现 - 知乎](https://zhuanlan.zhihu.com/p/496103195)[CQL算法logsumexp公式推导 - 知乎](https://zhuanlan.zhihu.com/p/546193376)[Conservative Q Learning(保守强化学习)傻瓜级讲解和落地教程 - 知乎](https://zhuanlan.zhihu.com/p/603691759)
 
@@ -83,5 +85,6 @@ $$\min\limits_{Q}\textcolor{red}{\max\limits_\mu}\alpha\cdot\left(\mathbb{E}_{s\
 
 ### TD3+BC (Twin Delayed Deep Deterministic Gradiant with Behavior Cloning)
 在TD3算法中的更新策略步骤添加了行为克隆损失项
+![](/images/TD3BCalg.png)
 
 ["A Minimalist Approach to Ofﬂine Reinforcement Learning" (Fujimoto, NeurIPS, 2021)](https://proceedings.neurips.cc/paper/2021/hash/a8166da05c5a094f7dc03724b41886e5-Abstract.html)[[Code]](https://github.com/sfujim/TD3_BC)

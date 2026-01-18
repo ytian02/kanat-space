@@ -1,5 +1,5 @@
 ---
-title: "II Value Based RL"
+title: "II Value-Based RL"
 slug: "II Value-Based RL"
 # 副标题
 subtitle: ""
