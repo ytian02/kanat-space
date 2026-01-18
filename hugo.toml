@@ -303,7 +303,7 @@ enableEmoji = true
 
   # FixIt 0.2.16 | CHANGED Social config about the author
   [params.social]
-    GitHub = ""
+    GitHub = "https://github.com/ytian02"
     Linkedin = ""
     Twitter = ""
     Instagram = ""
@@ -387,8 +387,8 @@ enableEmoji = true
     TryHackMe = ""
     Douyin = ""
     TikTok = ""
-    Phone = ""
-    Email = ""
+    Phone = "18156309590"
+    Email = "ytian02@outlook.com"
     RSS = true
 
   #  文章页面配置
