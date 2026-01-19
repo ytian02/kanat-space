@@ -915,6 +915,9 @@ enableEmoji = true
     guessSyntax = true
   # Goldmark 是 Hugo 0.60 以来的默认 Markdown 解析库
   [markup.goldmark]
+    [markup.goldmark.renderer]
+      # 是否在文档中直接使用 HTML 标签
+      unsafe = true
     [markup.goldmark.extensions]
       definitionList = true
       footnote = true
@@ -929,9 +932,6 @@ enableEmoji = true
         [markup.goldmark.extensions.passthrough.delimiters]
           block = [['$$', '$$'], ['\\[', '\\]']]
           inline = [['$', '$'], ['\\(', '\\)']]
-    [markup.goldmark.renderer]
-      # 是否在文档中直接使用 HTML 标签
-      unsafe = true
   # Table Of Contents settings
   [markup.tableOfContents]
     startLevel = 2

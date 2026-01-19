@@ -1,1 +1,0 @@
-window.config={"autoBookmark":true,"comment":{"enable":false},"lightgallery":true,"pangu":{"enable":true,"selector":"article"},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50},"siteTime":"2018-02-06T11:15:22+08:00","version":"v0.4.2-20260109063229-50d27e0e"};console.log('Page config:', window.config);

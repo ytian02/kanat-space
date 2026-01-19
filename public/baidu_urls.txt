@@ -2,5 +2,5 @@ https://ytian02.github.io/posts/%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2/
 https://ytian02.github.io/posts/i-preliminaries/
 https://ytian02.github.io/posts/ii-value-based-rl/
 https://ytian02.github.io/posts/iii-policy-based-rl/
-https://ytian02.github.io/posts/iv-offline-rl/
+https://ytian02.github.io/posts/iv-%E7%A6%BB%E7%BA%BF%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/
 https://ytian02.github.io/posts/v-maximum-entropy-rl/
