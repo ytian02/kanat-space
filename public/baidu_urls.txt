@@ -4,3 +4,6 @@ https://ytian02.github.io/posts/ii-value-based-rl/
 https://ytian02.github.io/posts/iii-policy-based-rl/
 https://ytian02.github.io/posts/iv-%E7%A6%BB%E7%BA%BF%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/
 https://ytian02.github.io/posts/v-maximum-entropy-rl/
+https://ytian02.github.io/posts/hugo/
+https://ytian02.github.io/posts/proxy/
+https://ytian02.github.io/posts/environment-settings/

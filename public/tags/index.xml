@@ -8,8 +8,29 @@
     <language>zh-CN</language>
     <managingEditor>ytian02@outlook.com (ty)</managingEditor>
     <webMaster>ytian02@outlook.com (ty)</webMaster>
-    <lastBuildDate>Mon, 19 Jan 2026 11:47:06 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 19 Jan 2026 15:31:27 +0800</lastBuildDate>
     <atom:link href="https://ytian02.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Website</title>
+      <link>https://ytian02.github.io/tags/website/</link>
+      <pubDate>Mon, 19 Jan 2026 15:31:27 +0800</pubDate><author>ytian02@outlook.com (ty)</author>
+      <guid>https://ytian02.github.io/tags/website/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Network</title>
+      <link>https://ytian02.github.io/tags/network/</link>
+      <pubDate>Mon, 19 Jan 2026 15:21:54 +0800</pubDate><author>ytian02@outlook.com (ty)</author>
+      <guid>https://ytian02.github.io/tags/network/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>https://ytian02.github.io/tags/python/</link>
+      <pubDate>Mon, 19 Jan 2026 15:09:15 +0800</pubDate><author>ytian02@outlook.com (ty)</author>
+      <guid>https://ytian02.github.io/tags/python/</guid>
+      <description></description>
+    </item>
     <item>
       <title>RL</title>
       <link>https://ytian02.github.io/tags/rl/</link>

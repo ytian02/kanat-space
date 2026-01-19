@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Quick - 合集 - Kanat Space</title>
+    <link>http://localhost:1313/collections/quick/</link>
+    <description>Kanat Space</description>
+    <generator>Hugo 0.154.3 &amp; FixIt v0.4.2-20260109063229-50d27e0e</generator>
+    <language>zh-CN</language>
+    <managingEditor>ytian02@outlook.com (ty)</managingEditor>
+    <webMaster>ytian02@outlook.com (ty)</webMaster>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/collections/quick/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
