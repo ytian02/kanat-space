@@ -2,26 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Collections on Kanat Space</title>
-    <link>https://ytian02.github.io/collections/</link>
+    <link>http://localhost:1313/collections/</link>
     <description>Recent content in Collections on Kanat Space</description>
     <generator>Hugo</generator>
     <language>zh-CN</language>
     <managingEditor>ytian02@outlook.com (ty)</managingEditor>
     <webMaster>ytian02@outlook.com (ty)</webMaster>
-    <lastBuildDate>Mon, 19 Jan 2026 15:31:27 +0800</lastBuildDate>
-    <atom:link href="https://ytian02.github.io/collections/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 20 Jan 2026 08:29:07 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/collections/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Quick Start</title>
-      <link>https://ytian02.github.io/collections/quick-start/</link>
-      <pubDate>Mon, 19 Jan 2026 15:31:27 +0800</pubDate><author>ytian02@outlook.com (ty)</author>
-      <guid>https://ytian02.github.io/collections/quick-start/</guid>
+      <title>Issue</title>
+      <link>http://localhost:1313/collections/issue/</link>
+      <pubDate>Tue, 20 Jan 2026 08:29:07 +0800</pubDate><author>ytian02@outlook.com (ty)</author>
+      <guid>http://localhost:1313/collections/issue/</guid>
       <description></description>
     </item>
     <item>
       <title>Reinforcement Learning</title>
-      <link>https://ytian02.github.io/collections/reinforcement-learning/</link>
-      <pubDate>Mon, 19 Jan 2026 11:47:06 +0800</pubDate><author>ytian02@outlook.com (ty)</author>
-      <guid>https://ytian02.github.io/collections/reinforcement-learning/</guid>
+      <link>http://localhost:1313/collections/reinforcement-learning/</link>
+      <pubDate>Mon, 19 Jan 2026 20:34:49 +0800</pubDate><author>ytian02@outlook.com (ty)</author>
+      <guid>http://localhost:1313/collections/reinforcement-learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LLM</title>
+      <link>http://localhost:1313/collections/llm/</link>
+      <pubDate>Mon, 19 Jan 2026 19:12:19 +0800</pubDate><author>ytian02@outlook.com (ty)</author>
+      <guid>http://localhost:1313/collections/llm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Quick Start</title>
+      <link>http://localhost:1313/collections/quick-start/</link>
+      <pubDate>Mon, 19 Jan 2026 15:31:27 +0800</pubDate><author>ytian02@outlook.com (ty)</author>
+      <guid>http://localhost:1313/collections/quick-start/</guid>
       <description></description>
     </item>
   </channel>

@@ -5,8 +5,8 @@ slug: "V Maximum Entropy RL"
 subtitle: ""
 # 文章描述，是搜索引擎呈现在搜索结果链接下方的网页简介，建议设置
 description: ""
-date: 2026-01-18T20:34:49+08:00
-lastmod: 2026-01-18T20:34:49+08:00
+date: 2026-01-19T20:34:49+08:00
+lastmod: 2026-01-19T20:34:49+08:00
 # 文章过期提醒
 outdatedInfoWarning: true
 draft: false
@@ -22,7 +22,6 @@ categories:
 # 文章所属的合集
 collections:
 - Reinforcement Learning
-weight: 6
 
 # [重要] 开启本页面的数学公式支持
 math: true
@@ -61,3 +60,6 @@ V_\text{soft}(s)&=\sum\limits_{a\in\mathcal{A}}\pi(a\vert s)\cdot \left[Q(s,a)-\
 &=\alpha\sum\limits_{a\in\mathcal{A}}\pi(a\vert s)\log Z,\\
 &=\alpha\log\sum\limits_{a^\prime\in\mathcal{A}}\exp\left(\dfrac{Q(s,a^\prime)}{\alpha}\right),
 \end{align}$$这也就是软价值函数的定义。
+
+## 未完待续
+后续会整理SAC的原理和实现。

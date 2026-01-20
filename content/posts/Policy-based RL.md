@@ -22,7 +22,6 @@ categories:
 # 文章所属的合集
 collections:
 - Reinforcement Learning
-weight: 4
 
 # [重要] 开启本页面的数学公式支持
 math: true
@@ -61,7 +60,7 @@ $$\begin{align}\hat{A}_t^{\text{GAE}(\lambda,\gamma)}&=(1-\lambda)\sum\limits_{n
 
 GAE详细的推导过程也可以参考[11.6 广义优势估计](https://hrl.boyuai.com/chapter/2/trpo%E7%AE%97%E6%B3%95#116-%E5%B9%BF%E4%B9%89%E4%BC%98%E5%8A%BF%E4%BC%B0%E8%AE%A1)，写得也很清楚。
 
-## Value-based RL
+## Policy-based RL
 ### Reinforce
 通过策略梯度和（回报的）蒙特卡洛近似$u_t$直接优化策略网络$\pi(a\vert s;\theta)$
 
@@ -135,3 +134,6 @@ SAC的前身是Soft Q-learning，都属于最大熵强化学习，Soft Q-learnin
 **目标网络:** 通常目标网络的参数不加入优化器，而是定期根据价值网络或策略网络的参数进行优化；
 
 **随机策略:** 在策略梯度的算法中，如果使用的是随机策略，一般用神经网络输出logits再经过softmax得到每个动作的概率，在选择动作时使用一个类别分布进行抽样得到动作
+
+## 未完待续
+PPO中使用了两次近似，后续会详细阐述。

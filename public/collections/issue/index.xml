@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Issue - 合集 - Kanat Space</title>
+    <link>http://localhost:1313/collections/issue/</link>
+    <description>Kanat Space</description>
+    <generator>Hugo 0.154.3 &amp; FixIt v0.4.2-20260109063229-50d27e0e</generator>
+    <language>zh-CN</language>
+    <managingEditor>ytian02@outlook.com (ty)</managingEditor>
+    <webMaster>ytian02@outlook.com (ty)</webMaster>
+    <lastBuildDate>Tue, 20 Jan 2026 08:29:07 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/collections/issue/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ToDoList</title>
+      <link>http://localhost:1313/posts/todolist/</link>
+      <pubDate>Tue, 20 Jan 2026 08:29:07 +0800</pubDate><author>ytian02@outlook.com (ty)</author>
+      <guid>http://localhost:1313/posts/todolist/</guid>
+      <category domain="http://localhost:1313/categories/others/">Others</category>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;RL4LLM: 整理 DPO、GRPO、Tree-GRPO、GTPO、DAPO、&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;λ&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;\lambda&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.6944em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;λ&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;-GRPO、GSPO、GDPO 的原理和代码实现&lt;/li&gt;&#xA;&lt;li&gt;III Policy-Based RL: PPO 中使用了两次近似，后续会详细阐述。&lt;/li&gt;&#xA;&lt;li&gt;IV 离线强化学习: 有空会整理一下 CQL 的详细推导，原文附录中的证明是有问题的，知乎上有相关讨论。&lt;/li&gt;&#xA;&lt;li&gt;V Maximum Entropy RL: 后续会整理 SAC 的原理和实现。&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>
