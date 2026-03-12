@@ -44,6 +44,14 @@ featuredImagePreview: ""
 
 ---
 
+## 本文概览
+
+🎯 目标读者: 了解基础 RL / policy gradient，想入门 RLHF/LLM 对齐中 PPO/GRPO 思路的读者
+⏱️ 阅读时间: 约 20 分钟
+📚 知识要点: PPO-Clip 目标函数、ratio/clip 直觉、优势函数的作用、实现要点、与 GRPO 的关系与参考资料
+
+这篇笔记把 PPO-Clip 的关键公式与代码实现放在一起看：先理解目标函数每一项在“约束更新幅度”上的作用，再去对照实现细节（log prob、ratio、优势估计等）会更顺。
+
 ## PPO
 本节主要梳理PPO-Clip算法原理和代码实现。引用[GRPO](https://arxiv.org/abs/2402.03300)论文中的记法，有PPO的优化目标
 $$\mathcal{J}_\text{PPO}(\theta)=\mathbb{E}_{q\sim P(Q)}\mathbb{E}_{o\sim\pi_{\theta_\text{old}}(O\vert q)}\dfrac{1}{\vert o\vert}\sum\limits_{i=1}^{\vert o\vert}\min\left\{\dfrac{\pi(o_t\vert q,o_{<t})}{\pi_{\theta_\text{old}}(o_t\vert q,o_{<t})}A_t,\text{clip}\left(\dfrac{\pi(o_t\vert q,o_{<t})}{\pi_{\theta_\text{old}}(o_t\vert q,o_{<t})},1-\epsilon,1+\epsilon\right)A_t\right\},$$其中$\text{clip}(x,l,r)\coloneqq\max\left\{\min\left\{x,r\right\},l\right\}$，$\epsilon>0$是一个超参数，**当优势大于0时，说明动作价值高于平均，最大化这个式子会增大比值，但不会超过$1+\epsilon$；当优势小于0时，说明动作价值低于平均，则最大化u这个式子会缩小比值，但不会低于$1-\epsilon$。**

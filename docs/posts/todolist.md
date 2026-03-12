@@ -44,6 +44,12 @@ featuredImagePreview: ""
 
 ---
 
+## 本文概览
+
+🎯 目标读者: 想跟踪本站后续更新计划的读者
+⏱️ 阅读时间: 约 2 分钟
+📚 知识要点: 待补全主题清单、后续文章方向、对应条目指向
+
 - RL4LLM: 整理 DPO、GRPO、Tree-GRPO、GTPO、DAPO、$\lambda$-GRPO、GSPO、GDPO 的原理和代码实现
 - III Policy-Based RL: PPO 中使用了两次近似，后续会详细阐述。
 - IV Offline RL: 有空会整理一下 CQL 的详细推导，原文附录中的证明是有问题的，知乎上有相关讨论。

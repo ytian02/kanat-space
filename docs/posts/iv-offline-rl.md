@@ -43,10 +43,21 @@ featuredImagePreview: ""
 
 ---
 
+## 本文概览
+
+🎯 目标读者: 了解基础 RL/价值学习，想入门 offline RL 的读者
+⏱️ 阅读时间: 约 15 分钟
+📚 知识要点: 离线数据集设定、分布外动作/外推误差、两类主流范式（constrained vs conservative）、BCQ/CQL/TD3+BC
+
+离线强化学习（Offline RL）关注的是：**在不能与环境交互（或交互成本很高）**的前提下，仅利用已有的离线轨迹数据集 $\mathcal{D}$ 来学习一个可部署的策略。它在推荐、广告、机器人等高风险场景中很常见，但也因此带来独特的“分布偏移/外推误差（extrapolation error）”问题。
+
 # IV Offline RL
 
 ## 基本概念
 区别于在线(同策略)强化学习和异策略强化学习方法，离线强化学习从离线的经验回放数组中直接学习一个策略用于和环境交互。
+
+更具体地说，我们通常只有一个固定的数据集 $\mathcal{D}=\{(s,a,r,s')\}$，它由某个（未知或已知的）行为策略 $\pi_\beta$ 收集而来。训练阶段无法再向环境请求新的转移样本，因此策略学习必须在“**尽量做策略改进**”与“**不要走出数据支持的动作分布**”之间权衡。
+
 ![](/images/online&offpolicy&offlineRL.png)
 ["Offline Reinforcement Learning: Tutorial, Review, and Perspectives on Open Problems" (Levine et al., 2023)](https://arxiv.org/abs/2005.01643)
 

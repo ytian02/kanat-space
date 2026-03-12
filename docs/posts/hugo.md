@@ -44,6 +44,12 @@ featuredImagePreview: ""
 
 ---
 
+## 本文概览
+
+🎯 目标读者: 想在 Windows 上用 Hugo + GitHub Pages 搭建博客的读者
+⏱️ 阅读时间: 约 8 分钟
+📚 知识要点: Hugo 建站流程、主题安装、常用命令、发布到 GitHub Pages、自动化部署
+
 ## Hugo for Windows
 原教程[Windows下使用hugo和Github Pages配置博客](https://www.haoyep.com/posts/windows-hugo-blog-github/)，写得非常详细，这里只是粗略地总结了整体的步骤和常用命令。
 

@@ -43,6 +43,12 @@ featuredImagePreview: ""
 
 ---
 
+## 本文概览
+
+🎯 目标读者: 需要在 Linux/Windows 上快速配置代理（含 Git 代理）的读者
+⏱️ 阅读时间: 约 6 分钟
+📚 知识要点: Clash for Linux 安装与启动、临时环境变量代理、Git Bash 全局代理设置与取消
+
 ## Clash for Linux
 ### 下载和安装
 ```sh
