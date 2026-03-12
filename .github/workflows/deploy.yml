@@ -2,38 +2,57 @@ name: deploy
 
 on:
   push:
-    branches: [ main ]  # 明确指定触发分支，避免不必要的构建
+    branches: [main]
   pull_request:
   workflow_dispatch:
-  schedule:
-    # Runs everyday at 0:00 AM
-    - cron: "0 0 * * *"
+
+# GitHub Pages (Actions) 部署需要这些权限
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4 # 升级到 v4
+        uses: actions/checkout@v4
         with:
-          submodules: true
           fetch-depth: 0
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3 # 升级到 v3
-        with:
-          hugo-version: "latest"
-          extended: true
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
 
-      - name: Build Web
-        run: hugo --minify # 推荐加上 minify 压缩代码
-
-      - name: Deploy Web
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
-          # 注意：这里参数建议用小写，虽然部分版本兼容大写，但小写更标准
-          personal_token: ${{ secrets.PERSONAL_TOKEN }}
-          external_repository: ytian02/ytian02.github.io
-          publish_branch: main  # 确认你的 github.io 仓库默认分支是 main 还是 master，目前新仓库大多是 main
-          publish_dir: ./public
-          commit_message: ${{ github.event.head_commit.message }}
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run docs:build
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs/.vitepress/dist
+
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
