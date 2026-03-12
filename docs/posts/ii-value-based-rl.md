@@ -6,7 +6,7 @@ subtitle: ""
 # 文章描述，是搜索引擎呈现在搜索结果链接下方的网页简介，建议设置
 description: "本文梳理了基于价值的强化学习算法。"
 date: 2026-01-10T19:36:47+08:00
-lastmod: 2026-01-10T19:36:47+08:00
+lastmod: 2026-01-10T19:37:47+08:00
 # 文章过期提醒
 outdatedInfoWarning: true
 draft: false
