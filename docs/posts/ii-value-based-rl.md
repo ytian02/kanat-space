@@ -43,11 +43,15 @@ featuredImagePreview: ""
 
 ---
 
+## AI 含量说明
+
+本文由 AI (Claude) 辅助生成，内容经过人工审核与编辑。部分描述可能存在简化表述，请读者结合实际使用体验参考。
+
 ## 本文概览
 
-🎯 目标读者: 已了解 MDP/贝尔曼方程，想快速建立 value-based RL 全景的读者
-⏱️ 阅读时间: 约 10 分钟
-📚 知识要点: Q-learning 思想、DQN 训练套路（回放池/目标网络）、高估偏差、Double DQN、Dueling 结构
+- 🎯 **目标读者**：已了解 MDP/贝尔曼方程，想快速建立 value-based RL 全景的读者
+- ⏱️ **阅读时间**：约 10 分钟
+- 📚 **知识要点**：Q-learning 思想、DQN 训练套路（回放池/目标网络）、高估偏差、Double DQN、Dueling 结构
 
 价值学习（value-based RL）的核心目标是学习（或近似）最优动作价值函数 $Q^*(s,a)$，再用贪心策略从 $Q$ 中导出动作选择。与 policy gradient 直接优化策略不同，value-based 方法往往把“策略改进”隐含在 $\arg\max$ 里。
 

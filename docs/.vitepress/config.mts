@@ -23,6 +23,48 @@ function escapeHtml(html: string) {
     .replace(/'/g, '&#39;')
 }
 
+function wrapH2Section(state: any, headingText: string, blockName: string, className: string) {
+  const tokens = state.tokens
+  const Token = state.Token
+
+  let i = 0
+  while (i < tokens.length) {
+    const t = tokens[i]
+
+    if (t.type === 'heading_open' && t.tag === 'h2') {
+      const inline = tokens[i + 1]
+      if (inline?.type === 'inline' && inline.content.trim() === headingText) {
+        // Avoid double-wrapping (in case of multiple passes).
+        const prev = tokens[i - 1]
+        if (prev?.type === 'html_block' && typeof prev.content === 'string' && prev.content.includes(`data-block="${blockName}"`)) {
+          i += 1
+          continue
+        }
+
+        const open = new Token('html_block', '', 0)
+        open.content = `<div class="${className}" data-block="${blockName}">\n`
+        tokens.splice(i, 0, open)
+        i += 1
+
+        // Close before the next H1/H2 (so we don't accidentally wrap the whole document).
+        let end = i + 1
+        for (; end < tokens.length; end++) {
+          const tt = tokens[end]
+          if (tt.type === 'heading_open' && (tt.tag === 'h1' || tt.tag === 'h2')) break
+        }
+
+        const close = new Token('html_block', '', 0)
+        close.content = `</div>\n`
+        tokens.splice(end, 0, close)
+
+        return
+      }
+    }
+
+    i += 1
+  }
+}
+
 function extractFrontmatterBlock(md: string): string {
   if (!md.startsWith('---')) return ''
   const end = md.indexOf('\n---', 3)
@@ -264,6 +306,12 @@ export default defineConfig(async () => {
             ? defaultFence(tokens, idx, options, env, self)
             : self.renderToken(tokens, idx, options)
         }
+
+        // Render special top-of-post blocks (pure Markdown in source, styled via global CSS).
+        md.core.ruler.after('block', 'wrap-post-special-sections', (state) => {
+          wrapH2Section(state, 'AI 含量说明', 'ai-disclosure', 'post-block post-ai-disclosure')
+          wrapH2Section(state, '本文概览', 'post-overview', 'post-block post-overview')
+        })
       }
     }
   }

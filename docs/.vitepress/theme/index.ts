@@ -2,6 +2,7 @@ import DefaultTheme from 'vitepress/theme'
 import type { Theme } from 'vitepress'
 
 import 'katex/dist/katex.min.css'
+import './style.css'
 
 import Layout from './Layout.vue'
 import PostsList from './components/PostsList.vue'

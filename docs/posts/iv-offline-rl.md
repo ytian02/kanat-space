@@ -43,11 +43,15 @@ featuredImagePreview: ""
 
 ---
 
+## AI 含量说明
+
+本文由 AI (Claude) 辅助生成，内容经过人工审核与编辑。部分描述可能存在简化表述，请读者结合实际使用体验参考。
+
 ## 本文概览
 
-🎯 目标读者: 了解基础 RL/价值学习，想入门 offline RL 的读者
-⏱️ 阅读时间: 约 15 分钟
-📚 知识要点: 离线数据集设定、分布外动作/外推误差、两类主流范式（constrained vs conservative）、BCQ/CQL/TD3+BC
+- 🎯 **目标读者**：了解基础 RL/价值学习，想入门 offline RL 的读者
+- ⏱️ **阅读时间**：约 15 分钟
+- 📚 **知识要点**：离线数据集设定、分布外动作/外推误差、两类主流范式（constrained vs conservative）、BCQ/CQL/TD3+BC
 
 离线强化学习（Offline RL）关注的是：**在不能与环境交互（或交互成本很高）**的前提下，仅利用已有的离线轨迹数据集 $\mathcal{D}$ 来学习一个可部署的策略。它在推荐、广告、机器人等高风险场景中很常见，但也因此带来独特的“分布偏移/外推误差（extrapolation error）”问题。
 
@@ -105,6 +109,3 @@ $$\min\limits_{Q}\alpha\mathbb{E}_{s\sim\mathcal{D}}\left[\log\sum\limits_{a\in\
 
 ## 未完待续
 有空会整理一下CQL的详细推导，原文附录中的证明是有问题的，知乎上有相关讨论。
-
-## 神秘问题
-不知道为什么只要标题出现"Offline RL"的字样就会出现公式双重显示的问题，所以本节使用中文标题。

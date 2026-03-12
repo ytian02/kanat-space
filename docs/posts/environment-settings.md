@@ -45,9 +45,10 @@ featuredImagePreview: ""
 
 ## 本文概览
 
-🎯 目标读者: 需要快速在本地/服务器搭好实验环境的读者
-⏱️ 阅读时间: 约 5 分钟
-📚 知识要点: Conda 环境创建、PyTorch CUDA 版本选择、常用依赖、Jupyter kernel 注册
+- 🎯 **目标读者**：需要快速在本地/服务器搭好实验环境的读者
+- ⏱️ **阅读时间**：约 5 分钟
+- 📚 **知识要点**：Conda 环境创建、PyTorch CUDA 版本选择、常用依赖、Jupyter kernel 注册
+
 
 ## Hands-on-LLMs
 ```sh

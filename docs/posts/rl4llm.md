@@ -46,9 +46,9 @@ featuredImagePreview: ""
 
 ## 本文概览
 
-🎯 目标读者: 了解基础 RL / policy gradient，想入门 RLHF/LLM 对齐中 PPO/GRPO 思路的读者
-⏱️ 阅读时间: 约 20 分钟
-📚 知识要点: PPO-Clip 目标函数、ratio/clip 直觉、优势函数的作用、实现要点、与 GRPO 的关系与参考资料
+- 🎯 **目标读者**：了解基础 RL / policy gradient，想入门 RLHF/LLM 对齐中 PPO/GRPO 思路的读者
+- ⏱️ **阅读时间**：约 20 分钟
+- 📚 **知识要点**：PPO-Clip 目标函数、ratio/clip 直觉、优势函数的作用、实现要点、与 GRPO 的关系与参考资料
 
 这篇笔记把 PPO-Clip 的关键公式与代码实现放在一起看：先理解目标函数每一项在“约束更新幅度”上的作用，再去对照实现细节（log prob、ratio、优势估计等）会更顺。
 

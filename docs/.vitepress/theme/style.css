@@ -1,0 +1,61 @@
+/*
+  Custom rendering for top-of-post sections:
+  - "AI 含量说明"
+  - "本文概览"
+
+  These blocks are injected by markdown-it in docs/.vitepress/config.mts
+*/
+
+.vp-doc .post-block {
+  margin: 1rem 0;
+  padding: 0.9rem 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--vp-c-border);
+  background: var(--vp-c-bg-soft);
+}
+
+/* VitePress default h2 has a top divider and big spacing; remove it inside our blocks. */
+.vp-doc .post-block > h2:first-child {
+  margin: 0 0 0.6rem;
+  padding-top: 0;
+  border-top: 0;
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+.vp-doc .post-block > h2:first-child + * {
+  margin-top: 0;
+}
+
+/* AI disclosure: warning-like */
+.vp-doc .post-ai-disclosure {
+  border-color: var(--vp-custom-block-warning-border, var(--vp-c-border));
+  border-left: 4px solid var(--vp-custom-block-warning-border, var(--vp-c-border));
+  background: var(--vp-custom-block-warning-bg, var(--vp-c-bg-soft));
+}
+
+.vp-doc .post-ai-disclosure p {
+  margin: 0.35rem 0 0;
+  color: var(--vp-c-text-2);
+}
+
+/* Post overview: tip/info-like */
+.vp-doc .post-overview {
+  border-color: var(--vp-custom-block-tip-border, var(--vp-c-border));
+  border-left: 4px solid var(--vp-custom-block-tip-border, var(--vp-c-border));
+  background: var(--vp-custom-block-tip-bg, var(--vp-c-bg-soft));
+}
+
+.vp-doc .post-overview ul {
+  margin: 0.25rem 0 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.vp-doc .post-overview li {
+  margin: 0.25rem 0;
+}
+
+.vp-doc .post-overview li strong {
+  font-weight: 600;
+}

@@ -43,11 +43,15 @@ featuredImagePreview: ""
 
 ---
 
+## AI 含量说明
+
+本文由 AI (Claude) 辅助生成，内容经过人工审核与编辑。部分描述可能存在简化表述，请读者结合实际使用体验参考。
+
 ## 本文概览
 
-🎯 目标读者: 想系统理解 policy gradient / actor-critic / PPO 这条路线的读者
-⏱️ 阅读时间: 约 25 分钟
-📚 知识要点: 策略梯度定理、baseline/advantage、GAE、Actor-Critic 家族、TRPO/PPO 思路
+- 🎯 **目标读者**：想系统理解 policy gradient / actor-critic / PPO 这条路线的读者
+- ⏱️ **阅读时间**：约 25 分钟
+- 📚 **知识要点**：策略梯度定理、baseline/advantage、GAE、Actor-Critic 家族、TRPO/PPO 思路
 
 如果说 value-based 方法更像“先学会打分（$Q$），再按分数选动作”，那么 policy-based 方法就是“直接把策略当作可优化的函数”。本文会把这条路线里最常见的公式与算法按一条主线串起来：从 REINFORCE → baseline/advantage → GAE → actor-critic → TRPO/PPO。
 
