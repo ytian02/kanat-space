@@ -53,6 +53,7 @@ featuredImagePreview: ""
 - ⏱️ **阅读时间**：约 15 分钟
 - 📚 **知识要点**：离线数据集设定、分布外动作/外推误差、两类主流范式（constrained vs conservative）、BCQ/CQL/TD3+BC
 
+## 前言
 离线强化学习（Offline RL）关注的是：**在不能与环境交互（或交互成本很高）**的前提下，仅利用已有的离线轨迹数据集 $\mathcal{D}$ 来学习一个可部署的策略。它在推荐、广告、机器人等高风险场景中很常见，但也因此带来独特的“分布偏移/外推误差（extrapolation error）”问题。
 
 # IV Offline RL

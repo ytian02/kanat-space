@@ -53,6 +53,7 @@ featuredImagePreview: ""
 - ⏱️ **阅读时间**：约 25 分钟
 - 📚 **知识要点**：策略梯度定理、baseline/advantage、GAE、Actor-Critic 家族、TRPO/PPO 思路
 
+## 前言
 如果说 value-based 方法更像“先学会打分（$Q$），再按分数选动作”，那么 policy-based 方法就是“直接把策略当作可优化的函数”。本文会把这条路线里最常见的公式与算法按一条主线串起来：从 REINFORCE → baseline/advantage → GAE → actor-critic → TRPO/PPO。
 
 ## 基本概念

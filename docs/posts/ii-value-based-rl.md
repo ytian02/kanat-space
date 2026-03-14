@@ -53,6 +53,7 @@ featuredImagePreview: ""
 - ⏱️ **阅读时间**：约 10 分钟
 - 📚 **知识要点**：Q-learning 思想、DQN 训练套路（回放池/目标网络）、高估偏差、Double DQN、Dueling 结构
 
+## 前言
 价值学习（value-based RL）的核心目标是学习（或近似）最优动作价值函数 $Q^*(s,a)$，再用贪心策略从 $Q$ 中导出动作选择。与 policy gradient 直接优化策略不同，value-based 方法往往把“策略改进”隐含在 $\arg\max$ 里。
 
 ## 基本概念

@@ -1,28 +1,28 @@
 ---
-title: "ToDoList"
-slug: "ToDoList"
+title: "Semantic IDs in Generative Recommendation"
+slug: "Semantic-IDs-in-Generative-Recommendation"
 # 副标题
 subtitle: ""
 # 文章描述，是搜索引擎呈现在搜索结果链接下方的网页简介，建议设置
 description: ""
-date: 2026-01-20T08:29:07+08:00
-lastmod: 2026-01-20T08:29:07+08:00
+date: 2026-03-14T22:00:00+08:00
+lastmod: 2026-03-14T22:00:00+08:00
 # 文章过期提醒
 outdatedInfoWarning: true
 draft: false
 
 # 文章的标签
 tags:
-- Network
+- GRs
+- SID
 
 # 文章所属的类别
 categories:
-- Others
+- Algorithms
 
 # 文章所属的合集
 collections:
-- Issue
-weight: 1
+- GRs
 
 # [重要] 开启本页面的数学公式支持
 math: true
@@ -44,9 +44,12 @@ featuredImagePreview: ""
 
 ---
 
-## Todo
+## 本文概览
 
-- RL4LLM: 整理 DPO、GRPO、Tree-GRPO、GTPO、DAPO、$\lambda$-GRPO、GSPO、GDPO 的原理和代码实现
-- III Policy-Based RL: PPO 中使用了两次近似，后续会详细阐述。
-- IV Offline RL: 有空会整理一下 CQL 的详细推导，原文附录中的证明是有问题的，知乎上有相关讨论。
-- V Maximum Entropy RL: 后续会整理 SAC 的原理和实现。
+- 🎯 **目标读者**：
+- ⏱️ **阅读时间**：
+- 📚 **知识要点**：
+
+## 前言
+本文主要介绍生成式推荐（Generative Recommendation, GRs）中的语义ID（Semantic IDs, SIDs）的概念以及2023年以来相关的研究进展。
+
