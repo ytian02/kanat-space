@@ -147,4 +147,28 @@ featuredImagePreview: ""
 ## Online Serving
 - **定义**：Online Serving 是指将训练好的模型部署到生产环境中，提供实时的预测或生成服务。
 - **压测**：在部署前进行压力测试（Stress Testing）以评估模型在高负载情况下的性能和稳定性。
-    - **性能指标**：常见的性能指标包括响应时间（Latency）、吞吐量（Throughput）和资源利用率（Resource Utilization）。    
+    - **性能指标**：常见的性能指标包括响应时间（Latency）、吞吐量（Throughput）和资源利用率（Resource Utilization）。
+
+## 大模型补充：PPO、RMSNorm 与束搜索
+
+### 大模型为什么常使用 PPO，而不是 DDPG / TD3 这类确定性策略方法
+1. **动作空间匹配**：LLM 的 token 选择是离散动作空间，PPO 更自然地适配离散策略优化流程。
+2. **策略随机性需求**：语言生成需要保留一定随机性来维持多样性，确定性策略不占优势。
+3. **训练稳定性**：PPO 的 clipping 机制可以约束策略更新步长，降低策略崩塌（Policy Collapse）风险。
+4. **资源开销与可扩展性**：Off-policy 方法依赖经验回放，在 LLM 场景中 transition（长上下文 + 高维状态）存储成本极高，工程上更重。
+
+### RMSNorm
+LayerNorm 同时使用均值与方差归一化，而 RMSNorm 只使用均方根，计算更轻量：
+$$
+\text{RMS}(x)=\sqrt{\frac{1}{d}\sum_{i=1}^{d}x_i^2}
+\quad\rightarrow\quad
+\hat{x}=\frac{x}{\text{RMS}(x)+\epsilon}
+\quad\rightarrow\quad
+y=\gamma\hat{x}
+$$
+其中 $\gamma$ 是可学习缩放参数。
+
+### 束搜索（Beam Search）
+- 束搜索在每一步保留 top-$k$ 条候选路径（beam），在质量与搜索开销之间做折中。
+- 相比贪心解码，束搜索通常能提高序列整体质量；相比全搜索，计算量可控。
+- 参考资料：[束搜索（Beam Search）- CSDN](https://blog.csdn.net/u013172930/article/details/145500769)
