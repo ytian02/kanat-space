@@ -14,7 +14,6 @@ draft: false
 # 文章的标签
 tags:
 - LLM
-- RL
 
 # 文章所属的类别
 categories:
