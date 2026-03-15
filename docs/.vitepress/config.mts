@@ -210,6 +210,10 @@ export default defineConfig(async () => {
     title: 'Kanat Space',
     description: '',
 
+    // Clear the old Hugo favicon (browser tab icon).
+    // `data:,` is an empty favicon.
+    head: [['link', { rel: 'icon', href: 'data:,' }]],
+
     // GitHub Pages 项目站点： https://<用户名>.github.io/<仓库名>/
     // 你的远程仓库是 ytian02/kanat-space，所以 base 应为 /kanat-space/
     base: '/kanat-space/',
@@ -250,7 +254,7 @@ export default defineConfig(async () => {
       lightModeSwitchTitle: '切换到浅色模式',
       darkModeSwitchTitle: '切换到深色模式',
 
-      socialLinks: [{ icon: 'github', link: 'https://github.com/ytian02' }],
+      socialLinks: [{ icon: 'github', link: 'https://github.com/ytian02/kanat-space' }],
 
       editLink: {
         pattern: 'https://github.com/ytian02/kanat-space/edit/main/docs/:path',
