@@ -8,8 +8,8 @@ hero:
   text: Kanat Space
   tagline: Generative Recommendation · Reinforcement Learning · Variational Inference
   image:
-    src: /avatar.png
-    alt: avatar
+    src: /favicon.png
+    alt: Kanat icon
   actions:
     - theme: brand
       text: Posts
