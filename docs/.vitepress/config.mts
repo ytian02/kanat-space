@@ -211,8 +211,26 @@ export default defineConfig(async () => {
     description: '',
 
     // Clear the old Hugo favicon (browser tab icon).
-    // `data:,` is an empty favicon.
-    head: [['link', { rel: 'icon', href: 'data:,' }]],
+    // NOTE: Some browsers treat `data:,` as invalid and fall back to `/favicon.ico`.
+    // Use a valid (but empty) SVG favicon to reliably override any previously cached icon.
+    head: [
+      [
+        'link',
+        {
+          rel: 'icon',
+          type: 'image/svg+xml',
+          href: "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'/%3E"
+        }
+      ],
+      [
+        'link',
+        {
+          rel: 'shortcut icon',
+          type: 'image/svg+xml',
+          href: "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'/%3E"
+        }
+      ]
+    ],
 
     // GitHub Pages 项目站点： https://<用户名>.github.io/<仓库名>/
     // 你的远程仓库是 ytian02/kanat-space，所以 base 应为 /kanat-space/
