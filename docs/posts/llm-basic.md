@@ -57,6 +57,15 @@ featuredImagePreview: ""
     - **拓展**：Z-loss ([Google PaLM](https://arxiv.org/abs/2204.02311))$$\text{z-loss}=10^{-4}\times\log^2(Z)$$其中$Z$是模型最后一层预测出的 logits 的最大值。这种做法使得模型最后一层的输出更加稳定。在进行模型输出超参数微调的时候,这种稳定性可以保证模型在调整过程中维持相对稳定的性能,避免因某些参数的调整导致模型的 logits 波动过大,从而影响模型的整体效果。
 - **词表扩充**：在生成式推荐中，需要对模型的词表进行扩充，以适应由单/多模态嵌入使用各种量化方法得到的语义ID。
 - **微调方法**：常见的微调方法包括全参数微调（Full Fine-tuning）和参数高效微调（Parameter-Efficient Fine-tuning, PEFT）。全参数微调需要更新模型的所有参数，而PEFT则只更新模型的一部分参数，如Adapter、LoRA等，能够显著减少训练时间和资源消耗。
+- **数据格式**：
+    - json文件
+    ```
+    {
+    "instruction": "用户的正反馈历史为：${sidList}，基于用户的正反馈历史，为用户推荐可能感兴趣的sid",
+    "input": "",
+    "output": "${sidLabel}",
+    }
+    ```
 - **训练参数**：以下基于 LlamaFactory 的全参数微调（FFT）配置进行参数详解：
     - **Model (模型)**
         - `model_name_or_path`: 模型文件路径或 HuggingFace Hub 上的模型 ID（如 `Qwen/Qwen3-4B`）。
@@ -102,6 +111,15 @@ featuredImagePreview: ""
 ## Inference
 - **定义**：Inference是指在模型训练完成后，使用训练好的模型对新的输入数据进行预测或生成的过程。
 - **推理引擎**：VLLM是一个高性能的推理引擎，专为大规模语言模型设计，能够显著提升推理效率和吞吐量。
+- **数据格式**
+    - 输出格式
+    ```
+    {
+        "prompt": "Human: 用户的正反馈历史为：${sidList}，基于用户的正反馈历史，为用户推荐可能感兴趣的sid\nAssistant:", 
+        "predict": "${sidPredList}", 
+        "label": "${sidLabel}\n"
+    }
+    ```
 - **推理参数**：
     - 以下基于  LlamaFactory 的 `vllm_infer.py` 进行参数详解：
     - **Model & Adapter（模型与适配器）**
@@ -143,7 +161,6 @@ featuredImagePreview: ""
         - `save_name`: 预测结果保存文件（jsonl），每行包含 `prompt/predict/label`。
         - `matrix_save_name`: 若不为 `None`，会额外计算并保存指标（如 BLEU、ROUGE、runtime、samples_per_second）。
         - 说明：`matrix_save_name` 依赖 `eval_bleu_rouge.compute_metrics`，更适合离线评测场景。
-
 ## Online Serving
 - **定义**：Online Serving 是指将训练好的模型部署到生产环境中，提供实时的预测或生成服务。
 - **压测**：在部署前进行压力测试（Stress Testing）以评估模型在高负载情况下的性能和稳定性。

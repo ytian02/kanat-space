@@ -211,8 +211,8 @@ export default defineConfig(async () => {
     description: '',
 
     // GitHub Pages 项目站点： https://<用户名>.github.io/<仓库名>/
-    // 你的远程仓库是 ytian02/blog，所以 base 应为 /blog/
-    base: '/blog/',
+    // 你的远程仓库是 ytian02/kanat-space，所以 base 应为 /kanat-space/
+    base: '/kanat-space/',
     cleanUrls: true,
 
     buildEnd: async (siteConfig) => {
@@ -253,7 +253,7 @@ export default defineConfig(async () => {
       socialLinks: [{ icon: 'github', link: 'https://github.com/ytian02' }],
 
       editLink: {
-        pattern: 'https://github.com/ytian02/blog/edit/main/docs/:path',
+        pattern: 'https://github.com/ytian02/kanat-space/edit/main/docs/:path',
         text: '在 GitHub 上编辑此页'
       },
 

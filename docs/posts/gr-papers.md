@@ -1,6 +1,6 @@
 ---
-title: "Generative Recommendation"
-slug: "Generative-Recommendation"
+title: "Generative Recommendation: Papers"
+slug: "Generative-Recommendation-Papers"
 # 副标题
 subtitle: ""
 # 文章描述，是搜索引擎呈现在搜索结果链接下方的网页简介，建议设置
