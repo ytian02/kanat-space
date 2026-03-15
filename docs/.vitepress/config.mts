@@ -210,26 +210,12 @@ export default defineConfig(async () => {
     title: 'Kanat Space',
     description: '',
 
-    // Clear the old Hugo favicon (browser tab icon).
-    // NOTE: Some browsers treat `data:,` as invalid and fall back to `/favicon.ico`.
-    // Use a valid (but empty) SVG favicon to reliably override any previously cached icon.
+    // Favicon (browser tab icon)
+    // Note: `head` entries are not automatically prefixed with `base` in the built HTML.
     head: [
-      [
-        'link',
-        {
-          rel: 'icon',
-          type: 'image/svg+xml',
-          href: "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'/%3E"
-        }
-      ],
-      [
-        'link',
-        {
-          rel: 'shortcut icon',
-          type: 'image/svg+xml',
-          href: "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'/%3E"
-        }
-      ]
+      ['link', { rel: 'icon', type: 'image/png', href: '/kanat-space/favicon.png' }],
+      ['link', { rel: 'shortcut icon', type: 'image/png', href: '/kanat-space/favicon.png' }],
+      ['link', { rel: 'apple-touch-icon', href: '/kanat-space/favicon.png' }]
     ],
 
     // GitHub Pages 项目站点： https://<用户名>.github.io/<仓库名>/
