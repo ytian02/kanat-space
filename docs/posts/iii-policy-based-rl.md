@@ -70,7 +70,15 @@ $$\dfrac{\partial J(\theta)}{\partial\theta}=\mathbb{E}_{S}\left[\mathbb{E}_{A\s
 ### GAE
 GAE借鉴了λ-return方法的思想，考虑优势函数的定义，有
 $$\begin{align}&\hat{A}_t^1=r_t+\gamma V(s_{t+1})-V(s_t)=\delta_t\\&\hat{A}_t^2=r_{t}+\gamma r_{t+1}+\gamma^2 V(s_{t+2})-V(s_t)=\delta_t+\gamma\delta_{t+1}\\&\cdots\\&\hat{A}_t^n=r_{t}+\gamma r_{t+1}+\cdots+\gamma^{n-1}r_{t+n-1}+\gamma^n V(s_{t+n})-V(s_t)=\sum\limits_{k=1}^n\gamma^{k-1}\delta_{t+k-1}\\&\cdots\\&\hat{A}_t^\infty=\sum\limits_{l=0}^\infty\gamma^{l}r_{t+l}-V(s_t)=\sum\limits_{l=0}^\infty\gamma^l\delta_{t+l}\end{align}$$参考λ-return方法，考虑无限步的推导，有
-$$\begin{align}\hat{A}_t^{\text{GAE}(\lambda,\gamma)}&=(1-\lambda)\sum\limits_{n=1}^{\infty}\lambda^{n-1}\hat{A}_t^n\\&=\sum\limits_{l=0}^\infty(\gamma\lambda)^l\delta_{t+l}\\&=\sum\limits_{l=1}^\infty(\gamma\lambda)^l\delta_{t+l}+\delta_t\\&=\gamma\lambda\hat{A}_{t+1}^{\text{GAE}(\lambda,\gamma)}+\delta_{t}\end{align}$$
+
+$$
+\begin{aligned}
+\hat{A}_t^{\text{GAE}(\lambda,\gamma)}&=(1-\lambda)\sum\limits_{n=1}^{\infty}\lambda^{n-1}\hat{A}_t^n\\
+&=\sum\limits_{l=0}^\infty(\gamma\lambda)^l\delta_{t+l}\\
+&=\sum\limits_{l=1}^\infty(\gamma\lambda)^l\delta_{t+l}+\delta_t\\
+&=\gamma\lambda\hat{A}_{t+1}^{\text{GAE}(\lambda,\gamma)}+\delta_{t}
+\end{aligned}
+$$
 
 GAE详细的推导过程也可以参考[11.6 广义优势估计](https://hrl.boyuai.com/chapter/2/trpo%E7%AE%97%E6%B3%95#116-%E5%B9%BF%E4%B9%89%E4%BC%98%E5%8A%BF%E4%BC%B0%E8%AE%A1)，写得也很清楚。
 
