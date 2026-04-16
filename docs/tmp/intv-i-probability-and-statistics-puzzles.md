@@ -1,34 +1,19 @@
 ---
 title: "第一类：概率与统计类 (最核心)"
-slug: "intv-i-probability-and-statistics-puzzles"
-subtitle: ""
 description: "概率与统计类面试智力题。"
 date: 2026-03-14T22:39:00+08:00
-lastmod: 2026-03-14T22:39:00+08:00
-outdatedInfoWarning: true
 draft: false
-
 tags:
-- 面试
-- 概率
-- 智力题
-
+  - 面试
+  - 概率
+  - 智力题
 categories:
-- 面试
-
+  - 面试
 collections:
-- Interview
-
+  - Interview
 math: true
-collectionList: true
-collectionNavigation: true
-
-hiddenFromHomePage: false
-hiddenFromSearch: false
-
-featuredImage: ""
-featuredImagePreview: ""
 ---
+
 
 ## AI 含量说明
 

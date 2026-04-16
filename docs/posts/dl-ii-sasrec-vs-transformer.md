@@ -1,34 +1,19 @@
 ---
 title: "SASRec和Transformer Encoder/Decoder-only Transformer的区别?"
-slug: "dl-ii-sasrec-vs-transformer"
-subtitle: ""
 description: "SASRec 与 Transformer 结构差异对比。"
 date: 2026-03-14T22:27:00+08:00
-lastmod: 2026-03-14T22:27:00+08:00
-outdatedInfoWarning: true
 draft: false
-
 tags:
-- 深度学习
-- 推荐系统
-- Transformer
-
+  - 深度学习
+  - 推荐系统
+  - Transformer
 categories:
-- 基础知识
-
+  - 基础知识
 collections:
-- Deep Learning
-
+  - Deep Learning
 math: true
-collectionList: true
-collectionNavigation: true
-
-hiddenFromHomePage: false
-hiddenFromSearch: false
-
-featuredImage: ""
-featuredImagePreview: ""
 ---
+
 
 ## AI 含量说明
 

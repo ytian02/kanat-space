@@ -1,33 +1,18 @@
 ---
 title: "常见的损失函数"
-slug: "ml-i-common-loss-functions"
-subtitle: ""
 description: "回归、分类、度量学习与对比学习常见损失函数。"
 date: 2026-03-14T22:22:00+08:00
-lastmod: 2026-03-14T22:22:00+08:00
-outdatedInfoWarning: true
 draft: false
-
 tags:
-- 机器学习
-- 损失函数
-
+  - 机器学习
+  - 损失函数
 categories:
-- 基础知识
-
+  - 基础知识
 collections:
-- Machine Learning
-
+  - Machine Learning
 math: true
-collectionList: true
-collectionNavigation: true
-
-hiddenFromHomePage: false
-hiddenFromSearch: false
-
-featuredImage: ""
-featuredImagePreview: ""
 ---
+
 
 ## AI 含量说明
 

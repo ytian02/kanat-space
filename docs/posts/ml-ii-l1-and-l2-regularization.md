@@ -1,33 +1,18 @@
 ---
 title: "L1和L2正则化"
-slug: "ml-ii-l1-and-l2-regularization"
-subtitle: ""
 description: "L1/L2 正则化的特点、几何解释与概率解释。"
 date: 2026-03-14T22:23:00+08:00
-lastmod: 2026-03-14T22:23:00+08:00
-outdatedInfoWarning: true
 draft: false
-
 tags:
-- 机器学习
-- 正则化
-
+  - 机器学习
+  - 正则化
 categories:
-- 基础知识
-
+  - 基础知识
 collections:
-- Machine Learning
-
+  - Machine Learning
 math: true
-collectionList: true
-collectionNavigation: true
-
-hiddenFromHomePage: false
-hiddenFromSearch: false
-
-featuredImage: ""
-featuredImagePreview: ""
 ---
+
 
 ## AI 含量说明
 

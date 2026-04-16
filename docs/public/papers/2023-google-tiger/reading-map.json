@@ -1,0 +1,32 @@
+{
+  "title": "Recommender Systems with Generative Retrieval",
+  "paper_slug": "2023-google-tiger",
+  "summary": "先用阅读地图锁定关键页和关键图，再回到对话里围绕具体证据讨论。",
+  "suggested_route": [
+    "先看第 1 页，理解标题、摘要和论文任务。",
+    "再看第 6 页，确认主结果或最核心的比较。",
+    "然后检查 image-008.png, image-006.png，理解模型图或主结果图。"
+  ],
+  "key_pages": [
+    {
+      "page": 1,
+      "label": "标题、摘要与问题定义"
+    },
+    {
+      "page": 6,
+      "label": "主结果或分析页"
+    }
+  ],
+  "key_figures": [
+    "image-008.png",
+    "image-006.png",
+    "image-007.png"
+  ],
+  "questions": [
+    "这篇论文真正的核心创新是什么？",
+    "主结果提升来自方法本身，还是来自表示方式或实验设定？",
+    "如果把它迁移到更大规模或工业环境，最大的风险点在哪里？"
+  ],
+  "source": "https://arxiv.org/pdf/2305.05065.pdf",
+  "draft_note_path": "C:\\Users\\tianyi\\Desktop\\code_python\\repo\\kanat-space\\docs\\papers\\drafts\\2023-google-recommender-systems-with-generative-retrieval.md"
+}

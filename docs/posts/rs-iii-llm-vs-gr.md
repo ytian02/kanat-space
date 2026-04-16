@@ -1,34 +1,19 @@
 ---
 title: "LLM VS GR"
-slug: "gr-iii-llm-vs-gr"
-subtitle: ""
 description: "从策略、奖励、状态、数据等维度对比 LLM 与生成式推荐。"
 date: 2026-03-14T22:34:00+08:00
-lastmod: 2026-03-14T22:34:00+08:00
-outdatedInfoWarning: true
 draft: false
-
 tags:
-- 推荐系统
-- LLM
-- 生成式推荐
-
+  - 推荐系统
+  - LLM
+  - 生成式推荐
 categories:
-- 基础知识
-
+  - 基础知识
 collections:
-- General Recommender System
-
+  - General Recommender System
 math: false
-collectionList: true
-collectionNavigation: true
-
-hiddenFromHomePage: false
-hiddenFromSearch: false
-
-featuredImage: ""
-featuredImagePreview: ""
 ---
+
 
 ## AI 含量说明
 

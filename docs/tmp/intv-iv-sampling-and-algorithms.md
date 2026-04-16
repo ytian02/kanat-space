@@ -1,34 +1,19 @@
 ---
 title: "第四类：数据采样与算法结合"
-slug: "intv-iv-sampling-and-algorithms"
-subtitle: ""
 description: "蓄水池采样与随机函数构造问题。"
 date: 2026-03-14T22:42:00+08:00
-lastmod: 2026-03-14T22:42:00+08:00
-outdatedInfoWarning: true
 draft: false
-
 tags:
-- 面试
-- 采样
-- 算法
-
+  - 面试
+  - 采样
+  - 算法
 categories:
-- 面试
-
+  - 面试
 collections:
-- Interview
-
+  - Interview
 math: true
-collectionList: true
-collectionNavigation: true
-
-hiddenFromHomePage: false
-hiddenFromSearch: false
-
-featuredImage: ""
-featuredImagePreview: ""
 ---
+
 
 ## AI 含量说明
 

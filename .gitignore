@@ -8,6 +8,3 @@ docs/.vitepress/dist/
 # Local
 .DS_Store
 Thumbs.db
-
-# Hugo build lock
-.hugo_build.lock

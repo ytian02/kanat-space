@@ -1,34 +1,19 @@
 ---
 title: "第二类：逻辑推理与最优解 (常考大厂)"
-slug: "intv-ii-logic-and-optimization-puzzles"
-subtitle: ""
 description: "逻辑推理与流程优化类智力题。"
 date: 2026-03-14T22:40:00+08:00
-lastmod: 2026-03-14T22:40:00+08:00
-outdatedInfoWarning: true
 draft: false
-
 tags:
-- 面试
-- 逻辑推理
-- 智力题
-
+  - 面试
+  - 逻辑推理
+  - 智力题
 categories:
-- 面试
-
+  - 面试
 collections:
-- Interview
-
+  - Interview
 math: false
-collectionList: true
-collectionNavigation: true
-
-hiddenFromHomePage: false
-hiddenFromSearch: false
-
-featuredImage: ""
-featuredImagePreview: ""
 ---
+
 
 ## AI 含量说明
 

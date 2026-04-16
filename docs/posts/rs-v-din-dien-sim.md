@@ -1,35 +1,20 @@
 ---
 title: "DIN & DIEN & SIM"
-slug: "gr-v-din-dien-sim"
-subtitle: ""
 description: "DIN/DIEN/SIM 的适用阶段与损失函数。"
 date: 2026-03-14T22:36:00+08:00
-lastmod: 2026-03-14T22:36:00+08:00
-outdatedInfoWarning: true
 draft: false
-
 tags:
-- 推荐系统
-- DIN
-- DIEN
-- SIM
-
+  - 推荐系统
+  - DIN
+  - DIEN
+  - SIM
 categories:
-- 基础知识
-
+  - 基础知识
 collections:
-- General Recommender System
-
+  - General Recommender System
 math: false
-collectionList: true
-collectionNavigation: true
-
-hiddenFromHomePage: false
-hiddenFromSearch: false
-
-featuredImage: ""
-featuredImagePreview: ""
 ---
+
 
 ## AI 含量说明
 

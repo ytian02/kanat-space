@@ -1,0 +1,3 @@
+display_name: Paper Reading Workflow
+short_description: Read local papers page by page, discuss them in the IDE, and sync conclusions back into drafts.
+default_prompt: Help me inspect a local paper page or figure and continue the discussion while keeping the draft note updated.

@@ -1,34 +1,19 @@
 ---
 title: "信息论"
-slug: "prob-ii-information-theory"
-subtitle: ""
 description: "熵、交叉熵、KL 散度与互信息。"
 date: 2026-03-14T22:21:00+08:00
-lastmod: 2026-03-14T22:21:00+08:00
-outdatedInfoWarning: true
 draft: false
-
 tags:
-- 信息论
-- 熵
-- KL散度
-
+  - 信息论
+  - 熵
+  - KL散度
 categories:
-- 基础知识
-
+  - 基础知识
 collections:
-- Probability
-
+  - Probability
 math: true
-collectionList: true
-collectionNavigation: true
-
-hiddenFromHomePage: false
-hiddenFromSearch: false
-
-featuredImage: ""
-featuredImagePreview: ""
 ---
+
 
 ## AI 含量说明
 

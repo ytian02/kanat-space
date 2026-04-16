@@ -1,34 +1,19 @@
 ---
 title: "第三类：博弈论 (Game Theory)"
-slug: "intv-iii-game-theory"
-subtitle: ""
 description: "博弈类智力题：不变量与逆向归纳。"
 date: 2026-03-14T22:41:00+08:00
-lastmod: 2026-03-14T22:41:00+08:00
-outdatedInfoWarning: true
 draft: false
-
 tags:
-- 面试
-- 博弈论
-- 智力题
-
+  - 面试
+  - 博弈论
+  - 智力题
 categories:
-- 面试
-
+  - 面试
 collections:
-- Interview
-
+  - Interview
 math: true
-collectionList: true
-collectionNavigation: true
-
-hiddenFromHomePage: false
-hiddenFromSearch: false
-
-featuredImage: ""
-featuredImagePreview: ""
 ---
+
 
 ## AI 含量说明
 

@@ -193,11 +193,23 @@ async function buildSidebar(docsDir: string) {
 
   const tagsSidebar = await buildTaxSidebar('tags', '标签')
   const categoriesSidebar = await buildTaxSidebar('categories', '分类')
+  const logsSidebar: SidebarGroup[] = [
+    { text: '维护日志', collapsed: false, items: [{ text: '全部日志', link: '/logs/' }] }
+  ]
+  const papersSidebar: SidebarGroup[] = [
+    { text: '论文笔记', collapsed: false, items: [{ text: '论文笔记入口', link: '/papers/' }] }
+  ]
+  const localPanelsSidebar: SidebarGroup[] = [
+    { text: 'Local Panels', collapsed: false, items: [{ text: 'All Panels', link: '/papers/local/' }] }
+  ]
 
   return {
     '/posts/': postsSidebar,
     '/tags/': tagsSidebar,
-    '/categories/': categoriesSidebar
+    '/categories/': categoriesSidebar,
+    '/logs/': logsSidebar,
+    '/papers/': papersSidebar,
+    '/papers/local/': localPanelsSidebar
   }
 }
 
@@ -222,6 +234,7 @@ export default defineConfig(async () => {
     // 你的远程仓库是 ytian02/kanat-space，所以 base 应为 /kanat-space/
     base: '/kanat-space/',
     cleanUrls: true,
+    srcExclude: ['papers/drafts/**/*.md'],
 
     buildEnd: async (siteConfig) => {
       if (!siteConfig.cleanUrls) return
@@ -232,6 +245,8 @@ export default defineConfig(async () => {
       nav: [
         { text: '首页', link: '/' },
         { text: '文章', link: '/posts/' },
+        { text: '论文笔记', link: '/papers/' },
+        { text: '日志', link: '/logs/' },
         { text: '分类', link: '/categories/' },
         { text: '标签', link: '/tags/' }
       ],

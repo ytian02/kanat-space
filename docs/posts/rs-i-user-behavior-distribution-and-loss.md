@@ -1,34 +1,19 @@
 ---
 title: "用户的行为分别服从什么概率分布,又能推导出什么损失?"
-slug: "gr-i-user-behavior-distribution-and-loss"
-subtitle: ""
 description: "推荐系统中行为分布建模与损失设计。"
 date: 2026-03-14T22:32:00+08:00
-lastmod: 2026-03-14T22:32:00+08:00
-outdatedInfoWarning: true
 draft: false
-
 tags:
-- 推荐系统
-- 概率建模
-- 损失函数
-
+  - 推荐系统
+  - 概率建模
+  - 损失函数
 categories:
-- 基础知识
-
+  - 基础知识
 collections:
-- General Recommender System
-
+  - General Recommender System
 math: true
-collectionList: true
-collectionNavigation: true
-
-hiddenFromHomePage: false
-hiddenFromSearch: false
-
-featuredImage: ""
-featuredImagePreview: ""
 ---
+
 
 ## AI 含量说明
 

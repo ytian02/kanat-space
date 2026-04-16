@@ -1,33 +1,18 @@
 ---
 title: "常用指标"
-slug: "gr-iv-common-metrics"
-subtitle: ""
 description: "推荐系统常见评估指标与场景化建议。"
 date: 2026-03-14T22:35:00+08:00
-lastmod: 2026-03-14T22:35:00+08:00
-outdatedInfoWarning: true
 draft: false
-
 tags:
-- 推荐系统
-- 评估指标
-
+  - 推荐系统
+  - 评估指标
 categories:
-- 基础知识
-
+  - 基础知识
 collections:
-- General Recommender System
-
+  - General Recommender System
 math: false
-collectionList: true
-collectionNavigation: true
-
-hiddenFromHomePage: false
-hiddenFromSearch: false
-
-featuredImage: ""
-featuredImagePreview: ""
 ---
+
 
 ## AI 含量说明
 

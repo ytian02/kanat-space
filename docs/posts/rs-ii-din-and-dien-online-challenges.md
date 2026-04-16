@@ -1,34 +1,19 @@
 ---
 title: "DIN和DIEN在工业级推荐系统中应用存在哪些难点?"
-slug: "gr-ii-din-and-dien-online-challenges"
-subtitle: ""
 description: "DIN/DIEN 在工业在线服务中的延迟与吞吐挑战。"
 date: 2026-03-14T22:33:00+08:00
-lastmod: 2026-03-14T22:33:00+08:00
-outdatedInfoWarning: true
 draft: false
-
 tags:
-- 推荐系统
-- DIN
-- DIEN
-
+  - 推荐系统
+  - DIN
+  - DIEN
 categories:
-- 基础知识
-
+  - 基础知识
 collections:
-- General Recommender System
-
+  - General Recommender System
 math: false
-collectionList: true
-collectionNavigation: true
-
-hiddenFromHomePage: false
-hiddenFromSearch: false
-
-featuredImage: ""
-featuredImagePreview: ""
 ---
+
 
 ## AI 含量说明
 

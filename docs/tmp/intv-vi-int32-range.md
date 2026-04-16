@@ -1,33 +1,18 @@
 ---
 title: "为什么32位二进制的最小值是$-2^{31}$,最大值是$2^{31}-1$"
-slug: "intv-vi-int32-range"
-subtitle: ""
 description: "32 位有符号整数范围的补码解释。"
 date: 2026-03-14T22:44:00+08:00
-lastmod: 2026-03-14T22:44:00+08:00
-outdatedInfoWarning: true
 draft: false
-
 tags:
-- 面试
-- 计算机基础
-
+  - 面试
+  - 计算机基础
 categories:
-- 面试
-
+  - 面试
 collections:
-- Interview
-
+  - Interview
 math: true
-collectionList: true
-collectionNavigation: true
-
-hiddenFromHomePage: false
-hiddenFromSearch: false
-
-featuredImage: ""
-featuredImagePreview: ""
 ---
+
 
 ## AI 含量说明
 

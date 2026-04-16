@@ -1,34 +1,19 @@
 ---
 title: "Scaling law"
-slug: "dl-v-scaling-law"
-subtitle: ""
 description: "LLM 缩放定律的核心变量与演进。"
 date: 2026-03-14T22:30:00+08:00
-lastmod: 2026-03-14T22:30:00+08:00
-outdatedInfoWarning: true
 draft: false
-
 tags:
-- 深度学习
-- 大模型
-- Scaling Law
-
+  - 深度学习
+  - 大模型
+  - Scaling Law
 categories:
-- 基础知识
-
+  - 基础知识
 collections:
-- Deep Learning
-
+  - Deep Learning
 math: true
-collectionList: true
-collectionNavigation: true
-
-hiddenFromHomePage: false
-hiddenFromSearch: false
-
-featuredImage: ""
-featuredImagePreview: ""
 ---
+
 
 ## AI 含量说明
 

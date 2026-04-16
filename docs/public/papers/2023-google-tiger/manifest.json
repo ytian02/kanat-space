@@ -1,0 +1,34 @@
+{
+  "pdf": "https://arxiv.org/pdf/2305.05065.pdf",
+  "text": "text\\paper.txt",
+  "extracted_images": [
+    "figures\\image-000.png",
+    "figures\\image-001.png",
+    "figures\\image-002.png",
+    "figures\\image-003.png",
+    "figures\\image-004.png",
+    "figures\\image-005.png",
+    "figures\\image-006.png",
+    "figures\\image-007.png",
+    "figures\\image-008.png",
+    "figures\\image-009.png",
+    "figures\\image-010.png",
+    "figures\\image-011.png",
+    "figures\\image-012.png",
+    "figures\\image-013.png"
+  ],
+  "rendered_pages": [
+    "pages\\page-1.png",
+    "pages\\page-6.png"
+  ],
+  "title": "Recommender Systems with Generative Retrieval",
+  "paper_slug": "2023-google-tiger",
+  "source_pdf": "C:\\Users\\tianyi\\Desktop\\paper list\\SIDs\\2023Google_Recommender Systems with Generative Retrieval.pdf",
+  "source": "https://arxiv.org/pdf/2305.05065.pdf",
+  "arxiv": "https://arxiv.org/abs/2305.05065",
+  "draft_note_path": "C:\\Users\\tianyi\\Desktop\\code_python\\repo\\kanat-space\\docs\\papers\\drafts\\2023-google-recommender-systems-with-generative-retrieval.md",
+  "page_text": "page-text.json",
+  "reading_map": "reading-map.json",
+  "workspace_data": "workspace-data.json",
+  "local_panel_path": "C:\\Users\\tianyi\\Desktop\\code_python\\repo\\kanat-space\\docs\\papers\\local\\2023-google-tiger.md"
+}

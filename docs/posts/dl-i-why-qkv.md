@@ -1,34 +1,19 @@
 ---
 title: "为什么自注意力机制不直接使用输入向量$X$作为QKV?"
-slug: "dl-i-why-qkv"
-subtitle: ""
 description: "自注意力机制中 Q/K/V 线性投影的必要性。"
 date: 2026-03-14T22:26:00+08:00
-lastmod: 2026-03-14T22:26:00+08:00
-outdatedInfoWarning: true
 draft: false
-
 tags:
-- 深度学习
-- Transformer
-- 注意力机制
-
+  - 深度学习
+  - Transformer
+  - 注意力机制
 categories:
-- 基础知识
-
+  - 基础知识
 collections:
-- Deep Learning
-
+  - Deep Learning
 math: true
-collectionList: true
-collectionNavigation: true
-
-hiddenFromHomePage: false
-hiddenFromSearch: false
-
-featuredImage: ""
-featuredImagePreview: ""
 ---
+
 
 ## AI 含量说明
 

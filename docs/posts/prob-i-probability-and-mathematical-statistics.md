@@ -1,33 +1,18 @@
 ---
 title: "概率论与数理统计"
-slug: "prob-i-probability-and-mathematical-statistics"
-subtitle: ""
 description: "概率论与数理统计常见公式与充分统计量梳理。"
 date: 2026-03-14T22:20:00+08:00
-lastmod: 2026-03-14T22:20:00+08:00
-outdatedInfoWarning: true
 draft: false
-
 tags:
-- 概率论
-- 数理统计
-
+  - 概率论
+  - 数理统计
 categories:
-- 基础知识
-
+  - 基础知识
 collections:
-- Probability
-
+  - Probability
 math: true
-collectionList: true
-collectionNavigation: true
-
-hiddenFromHomePage: false
-hiddenFromSearch: false
-
-featuredImage: ""
-featuredImagePreview: ""
 ---
+
 
 ## AI 含量说明
 

@@ -1,34 +1,19 @@
 ---
 title: "Transformer -> Bert -> GPT"
-slug: "dl-iv-transformer-bert-gpt"
-subtitle: ""
 description: "Transformer、BERT、GPT 三类架构定位对比。"
 date: 2026-03-14T22:29:00+08:00
-lastmod: 2026-03-14T22:29:00+08:00
-outdatedInfoWarning: true
 draft: false
-
 tags:
-- 深度学习
-- NLP
-- 大模型
-
+  - 深度学习
+  - NLP
+  - 大模型
 categories:
-- 基础知识
-
+  - 基础知识
 collections:
-- Deep Learning
-
+  - Deep Learning
 math: false
-collectionList: true
-collectionNavigation: true
-
-hiddenFromHomePage: false
-hiddenFromSearch: false
-
-featuredImage: ""
-featuredImagePreview: ""
 ---
+
 
 ## AI 含量说明
 

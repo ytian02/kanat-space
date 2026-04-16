@@ -1,33 +1,18 @@
 ---
 title: "L2正则化和权重衰减"
-slug: "ml-iii-l2-regularization-and-weight-decay"
-subtitle: ""
 description: "L2 正则化与权重衰减在 SGD/Adam 中的关系。"
 date: 2026-03-14T22:24:00+08:00
-lastmod: 2026-03-14T22:24:00+08:00
-outdatedInfoWarning: true
 draft: false
-
 tags:
-- 机器学习
-- 优化器
-
+  - 机器学习
+  - 优化器
 categories:
-- 基础知识
-
+  - 基础知识
 collections:
-- Machine Learning
-
+  - Machine Learning
 math: false
-collectionList: true
-collectionNavigation: true
-
-hiddenFromHomePage: false
-hiddenFromSearch: false
-
-featuredImage: ""
-featuredImagePreview: ""
 ---
+
 
 ## AI 含量说明
 

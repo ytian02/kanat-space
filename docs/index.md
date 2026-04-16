@@ -15,11 +15,14 @@ hero:
       text: Posts
       link: /posts/
     - theme: alt
+      text: Paper Notes
+      link: /papers/
+    - theme: alt
+      text: Logs
+      link: /logs/
+    - theme: alt
       text: Categories
       link: /categories/
-    - theme: alt
-      text: Tags
-      link: /tags/
 
 features:
   - title: Research Interests
@@ -28,6 +31,8 @@ features:
     details: Xi'an Jiaotong University (B.S. + double degree + M.S.) | Xiaomi generative recommendation internship
   - title: Publications
     details: IET Image Processing (2025) · GAIP-VAE
+  - title: Notes System
+    details: VitePress notes, maintenance logs, and a reserved workflow for paper note generation
 ---
 
 ## Bio
@@ -50,6 +55,10 @@ I am Kanat. My research interests focus on **Generative Recommendation** and **R
 ## Publications
 
 1. **Tian Y**, Song Z. *GAIP‐VAE: Balancing Reconstruction and Disentanglement in VAE With Group and Individual Priors.* IET Image Processing, 2025. https://ietresearch.onlinelibrary.wiley.com/doi/full/10.1049/ipr2.70113
+
+## Recent Logs
+
+<RecentLogs :limit="3" />
 
 ## Contact
 

@@ -1,33 +1,18 @@
 ---
 title: "常用的Linux指令"
-slug: "intv-v-common-linux-commands"
-subtitle: ""
 description: "面试和实战中的常见 Linux 命令。"
 date: 2026-03-14T22:43:00+08:00
-lastmod: 2026-03-15T10:00:00+08:00
-outdatedInfoWarning: true
 draft: false
-
 tags:
-- 面试
-- Linux
-
+  - 面试
+  - Linux
 categories:
-- 面试
-
+  - 面试
 collections:
-- Interview
-
+  - Interview
 math: false
-collectionList: true
-collectionNavigation: true
-
-hiddenFromHomePage: false
-hiddenFromSearch: false
-
-featuredImage: ""
-featuredImagePreview: ""
 ---
+
 
 ## AI 含量说明
 

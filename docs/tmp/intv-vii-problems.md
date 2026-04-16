@@ -1,32 +1,17 @@
 ---
 title: "反问环节"
-slug: "intv-vii-problems"
-subtitle: ""
 description: "反问环节需要关注的问题。"
 date: 2026-03-15T13:02:00+08:00
-lastmod: 2026-03-15T13:02:00+08:00
-outdatedInfoWarning: true
 draft: false
-
 tags:
-- 面试
-
+  - 面试
 categories:
-- 面试
-
+  - 面试
 collections:
-- Interview
-
+  - Interview
 math: true
-collectionList: true
-collectionNavigation: true
-
-hiddenFromHomePage: false
-hiddenFromSearch: false
-
-featuredImage: ""
-featuredImagePreview: ""
 ---
+
 
 ## AI 含量说明
 

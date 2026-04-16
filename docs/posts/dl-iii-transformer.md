@@ -1,33 +1,18 @@
 ---
 title: "Transformer"
-slug: "dl-iii-transformer"
-subtitle: ""
 description: "Transformer 结构、设计动机与复杂度整理。"
 date: 2026-03-14T22:28:00+08:00
-lastmod: 2026-03-14T22:28:00+08:00
-outdatedInfoWarning: true
 draft: false
-
 tags:
-- 深度学习
-- Transformer
-
+  - 深度学习
+  - Transformer
 categories:
-- 基础知识
-
+  - 基础知识
 collections:
-- Deep Learning
-
+  - Deep Learning
 math: true
-collectionList: true
-collectionNavigation: true
-
-hiddenFromHomePage: false
-hiddenFromSearch: false
-
-featuredImage: ""
-featuredImagePreview: ""
 ---
+
 
 ## AI 含量说明
 
